@@ -127,7 +127,7 @@ console.log(sameCompany)
 
 let group1 = []
 
-let newGroup = runners.filter( function (alpha) {
+let specialGroup = runners.filter( function (alpha) {
     let lettersA = /^[A-Da-d]/
     let newA = alpha.last_name
     if(newA.match(lettersA)) {
@@ -135,4 +135,4 @@ let newGroup = runners.filter( function (alpha) {
     }
 })
 
-console.log(newGroup)
+console.log(specialGroup)

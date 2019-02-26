@@ -91,9 +91,26 @@ console.log(contains('yo-yo', items, check))
 console.log(contains('Gum', items, check))
 
 /* STRETCH PROBLEM */
-let myArray = ['Tom', 'Sam', 'Tom', 'Sam', 3, 5, 3, 18]
-function removeDuplicates(array, cb) {
-  // removeDuplicates removes all duplicate values from the given array.
+
+// removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+
+let myArray = []
+let newArray = [];
+function removeItems(arr){
+   for(i=0;i<arr.length; i++) {
+      if(newArray.indexOf(arr[i]) === -1) {
+        newArray.push(arr[i])
+      }
+   }
+   return newArray
+}; 
+
+
+function removeDuplicates(array, cb) {
+  
+  return cb(array);
 }
+
+console.log(removeDuplicates(['Tom', 'Sam', 'Tom', 'Sam', 3, 5, 3, 18], removeItems))
