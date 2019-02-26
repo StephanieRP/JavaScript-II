@@ -91,7 +91,7 @@ console.log(contains('yo-yo', items, check))
 console.log(contains('Gum', items, check))
 
 /* STRETCH PROBLEM */
-
+let myArray = ['Tom', 'Sam', 'Tom', 'Sam', 3, 5, 3, 18]
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
